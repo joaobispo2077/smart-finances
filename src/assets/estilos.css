@@ -15,23 +15,6 @@
   color: #41d3be;
 }
 
-.container {
-  background-color: #f1f1f1;
-  min-height: 90vh;
-  padding: 0px 15vw;
-}
-
-.conteudo {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.imagem-icone {
-  height: 25px;
-  width: 25px;
-}
-
 .btn {
   margin: 15px auto 0px auto;
   display: block;
