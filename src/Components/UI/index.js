@@ -1,15 +1,20 @@
 import styled from 'styled-components';
 import { primary } from './colors';
+
 export const Icon = styled.img`
   height: 25px;
   width: 25px;
+`;
+
+export const IconByTheme = styled(Icon)`
+  filter: ${({ theme }) => theme.filter};
 `;
 
 export const Box = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: white;
+  background-color:  ${({ theme }) => theme.container};
   border-radius: 5px;
   box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.04);
   padding: 20px;
@@ -45,3 +50,11 @@ export const Balance = styled.div`
   font-size: 32px;
 `;
 
+export const Switcher = styled.button`
+  position: absolute;
+  top: 4vh;
+  right: 20px;
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+`;
